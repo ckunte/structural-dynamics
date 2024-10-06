@@ -24,7 +24,7 @@ jobs:
         uses: typst-community/setup-typst@v3
       - run: typst compile structural-dynamics.typ --font-path=fonts
       - name: release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
